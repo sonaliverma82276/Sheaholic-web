@@ -1,0 +1,274 @@
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: "Montserrat-bold";
+}
+
+.link{
+  font-family: "Montserrat-bold";
+  font-size: 1.5rem;
+}
+
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+
+}
+
+.navbar-list{
+  padding: 0 10px;
+}
+
+.nav-link{
+  font-size: 1.5rem;
+  font-family: "Montserrat-light"
+}
+
+.middle
+{
+	margin: 0;
+	background-image: url("../images/girl.jpg");
+
+  background-repeat: no-repeat;
+	width: 100%;
+	min-height: 700px;
+	background-size: 100% 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+  padding: 15% 10%;
+  text-align: center;
+}
+
+.mid-heading{
+  color: black;
+  font-family: "Montserrat-bold";
+  font-size: 3.25rem;
+  font-weight: bold;
+  padding-bottom: 5%;
+}
+
+.small-heading{
+  color: black;
+  font-family: "Montserrat-bold";
+  font-size: 2.5rem;
+
+  padding-bottom: 5%;
+}
+
+
+
+.search-button
+{
+	box-sizing: border-box;
+	border-style: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1rem;
+  padding: 2% 2%;
+	border: 4px solid #D47FA6;
+	color: white;
+	background-color: black;
+}
+.search-button:hover
+{
+	background-color: #D47FA6;
+	border: 4px solid black;
+	color: black;
+}
+
+#bottom{
+display: none;
+}
+
+.info{
+  font-family: "Montserrat-bold";
+  font-size: 1.6rem;
+  color: black;
+  line-height: 1.75;
+  text-align: left;
+}
+
+
+#heading {
+  text-align: center;
+  font-size: 2.75rem;
+  font-family: "Montserrat-bold";
+  text-align: left;
+  font-weight: bold;
+  padding-top: 5%;
+  padding-bottom: 4%;
+  color: #D47FA6;
+}
+
+.make-flex{
+  padding-left: 6%;
+}
+
+.icon2{
+  margin: 5% 2% 3%;
+  color: black;
+}
+
+.icon2:hover{
+  color: white;
+}
+
+
+
+.footer-section{
+  background-color: #D47FA6;
+    padding: 1% 15%;
+    text-align: center;
+}
+
+.image{
+  height: 500px;
+  width: 300px;
+}
+
+#about figure {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+  }
+
+  #about figure span {
+    float: left;
+    margin-left: -15px;
+    padding: 15px 20px;
+    position: relative;
+    top: 20px;
+  }
+
+  .fa{
+    background: #29ca8e;
+    border-radius: 50px;
+    color: #D47FA6;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .entry-form {
+    background: #252020;
+    border-radius: 100%;
+    text-align: center;
+    padding: 6em;
+    width: 450px;
+    height: 450px;
+  }
+
+  .entry-form h2 {
+    color: #D47FA6;
+    margin: 0;
+  }
+
+  .entry-form .form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+    margin: 10px 0;
+  }
+
+  .entry-form .submit-btn {
+    background: #ffffff;
+    border-radius: 50px;
+    border: 0;
+    color: #252020;
+    width: 50%;
+    height: 50px;
+    margin: 30px auto;
+    margin-bottom: 10px;
+  }
+
+  .entry-form .submit-btn:hover {
+    background: #D47FA6;
+    color: #ffffff;
+  }
+
+  section {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+
+    body {
+      background: #ffffff;
+      font-family: 'Nunito', sans-serif;
+      overflow-x: hidden;
+      padding-top: 70px;
+    }
+
+
+    /*---------------------------------------
+       TYPOGRAPHY
+    -----------------------------------------*/
+
+    h1,h2,h3,h4,h5,h6 {
+      font-family: 'Muli', sans-serif;
+      font-weight: bold;
+      line-height: inherit;
+    }
+
+    h1 {
+      color: #252525;
+      font-size: 3em;
+      line-height: normal;
+    }
+
+    h2 {
+      color: #353535;
+      font-size: 2em;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 0;
+    }
+
+    h3,
+    h3 a {
+      color: #454545;
+    }
+
+    p {
+      color: #757575;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    #courses{
+      padding: 100px;
+    }
+
+    .price-text{
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+    .pricing-column{
+      padding: 3% 2%;
+    }
+
+   .course-img{
+     padding-bottom: 1rem;
+   }
+
+   .btn:hover
+   {
+   	background-color: #D47FA6;
+   	border: 4px solid black;
+   	color: black;
+   }

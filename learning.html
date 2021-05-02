@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/learning.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <title>seeker</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#D47FA6;">
+      <a class="navbar-brand" href="">Sheaholic</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-list">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="navbar-list">
+            <a class="nav-link" href="learning.html">Learning</a>
+          </li>
+          <li class="navbar-list">
+            <a class="nav-link" href="quiz.html">Quizzes</a>
+          </li>
+          <li class="navbar-list">
+            <a class="nav-link" href="Blogs\views\bb.ejs">Blogs</a>
+          </li>
+          <li class="navbar-list">
+            <a class="nav-link" href="signin.html">SignIn</a>
+          </li>
+          <li class="navbar-list">
+            <a class="nav-link" href="signup.html">SignUp</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+ <div class="middle">
+  <form name="search" class="search" id="search">
+    <h3 class="mid-heading">Start your journey today with Sheaholic </h3>
+    <h2 class="small-heading">Push your limits by learing in an interactive way with our mentors</h2>
+
+    <!-- <input type="text" name="item" id="item" placeholder="item name"> -->
+    <button  class="search-button" >Take a course</button>
+
+
+  </form>
+ </div>
+
+ <section id="about">
+           <div class="container">
+                <div class="row">
+
+                     <div class="col-md-6 col-sm-12">
+                          <div class="about-info">
+                               <h2>Start your journey to a better life with Sheaholic</h2>
+
+                               <figure>
+                                    <span><i class="fa fa-users icn fa-2x"></i></span>
+                                    <figcaption>
+                                         <h3>Professional Trainers</h3>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                    </figcaption>
+                               </figure>
+
+                               <figure>
+                                    <span><i class="fa fa-certificate icn fa-2x"></i></span>
+                                    <figcaption>
+                                         <h3>Interactive learning</h3>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                    </figcaption>
+                               </figure>
+
+                               <figure>
+                                    <span><i class="fa fa-bar-chart-o icn fa-2x"></i></span>
+                                    <figcaption>
+                                         <h3>Free of cost</h3>
+                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ipsa voluptatibus.</p>
+                                    </figcaption>
+                               </figure>
+                          </div>
+                     </div>
+
+                     <div class="col-md-offset-1 col-md-4 col-sm-12">
+                          <div class="entry-form">
+                               <form action="#" method="post">
+                                    <h2>Signup today</h2>
+                                    <input type="text" name="full name" class="form-control" placeholder="Full name" required="">
+
+                                    <input type="email" name="email" class="form-control" placeholder="Your email address" required="">
+
+                                    <input type="password" name="password" class="form-control" placeholder="Your password" required="">
+
+                                    <button class="submit-btn form-control" id="form-submit">Get started</button>
+
+                                    <a href="#"><p>Already have an account? <u>login</u>
+                                    </p></a>
+                               </form>
+                          </div>
+                     </div>
+
+                </div>
+           </div>
+      </section>
+
+
+      <section class="white-section" id="courses">
+
+    <h2 class="section-heading">Courses offered by us</h2>
+
+    <div class="row">
+      <div class="pricing-column col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+             <h3>Web Development</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">Free</h2>
+            <img class="course-img" src="images/webd.jpeg" width="200px" height="200px">
+            <button type="button" class="btn btn-block btn-dark btn-lg">Sign Up</button>
+          </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>App Development</h3>
+        </div>
+        <div class="card-body">
+          <h2 class="price-text">Free</h2>
+          <img class="course-img" src="images/appd.png" width="200px" height="200px">
+          <button type="button" class="btn btn-block btn-dark btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-column col-lg-4 col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>Machine Learning</h3>
+        </div>
+        <div class="card-body">
+          <h2 class="price-text">Free</h2>
+          <img class="course-img" src="images/ml.jpeg" width="200px" height="200px">
+          <button type="button" class="btn btn-block btn-dark btn-lg">Sign Up</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </section>
+
+
+
+<footer class="footer-section" id="footer">
+          <div class="fluid-container">
+          <a href="https://twitter.com/twitter?lang=en"><i class="fab fa-twitter icon2 fa-2x"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon2 fa-2x"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram icon2 fa-2x"></i></a>
+          <!-- <a href="https://www.pinterest.com/"><i class="fab fa-pinterest icon2 fa-2x"></i></a> -->
+
+
+        </div>
+        </footer>
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="index.js" charset="utf-8"></script>
+
+  </body>
+</html>

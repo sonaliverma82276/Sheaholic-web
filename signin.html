@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/signup.css">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDg7JpZGiCrgQivmJbGtxV6RbfIgcBFs2Q",
+    authDomain: "sheaholic-dab57.firebaseapp.com",
+    projectId: "sheaholic-dab57",
+    storageBucket: "sheaholic-dab57.appspot.com",
+    messagingSenderId: "963799068584",
+    appId: "1:963799068584:web:c8456df5a6cb9c3d6e779d",
+    measurementId: "G-G6VL6ZYP2T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        #login-box {
+            height: 350px;
+        }
+
+        .right {
+            top: 50px;
+        }
+
+        .or {
+            top: 140px;
+        }
+    </style>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#D47FA6;">
+		<a class="navbar-brand" href="">Sheaholic</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+			<ul class="navbar-nav ml-auto">
+				<li class="navbar-list">
+					<a class="nav-link" href="index.html">Home</a>
+				</li>
+				<li class="navbar-list">
+					<a class="nav-link" href="learning.html">Learning</a>
+				</li>
+				<li class="navbar-list">
+					<a class="nav-link" href="quiz.html">Quizzes</a>
+				</li>
+				<li class="navbar-list">
+					<a class="nav-link" href="Blogs\views\bb.ejs">Blogs</a>
+				</li>
+				<li class="navbar-list">
+					<a class="nav-link" href="signin.html">SignIn</a>
+				</li>
+				<li class="navbar-list">
+					<a class="nav-link" href="signup.html">SignUp</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+    <div id="login-box">
+        <div class="left">
+            <h1>Sign In</h1>
+
+
+            <input id="email_l" type="text" name="email" placeholder="E-mail" />
+            <input id="password_l" type="password" name="password" placeholder="Password" />
+
+            <input onclick="login()" type="submit" name="signup_submit" value="Sign me in" />
+        </div>
+
+        <div class="right">
+            <!-- <span class="loginwith">Sign in with<br />social network</span> -->
+
+            <button class="social-signin facebook">Log in with facebook</button>
+            <button class="social-signin twitter">Log in with Twitter</button>
+            <button class="social-signin google">Log in with Google+</button>
+        </div>
+        <div class="or">OR</div>
+    </div>
+		<footer class="footer-section" id="footer">
+          <div class="fluid-container">
+          <a href="https://twitter.com/twitter?lang=en"><i class="fab fa-twitter icon2 fa-2x"></i></a>
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon2 fa-2x"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram icon2 fa-2x"></i></a>
+          <!-- <a href="https://www.pinterest.com/"><i class="fab fa-pinterest icon2 fa-2x"></i></a> -->
+
+
+        </div>
+        </footer>
+</body>
+<script type="text/javascript">
+function login(){
+     var email=document.getElementById("email_l").value;
+    /* var url = window.location.href+"imageUpload" ;
+         window.location.replace(url);
+         window.alert(email); */
+         if(email=="") window.alert("Email cannot be empty!");
+
+         else {
+    firebase.auth().signInWithEmailAndPassword(email, document.getElementById("password_l").value)
+.then(function(result) {
+  // result.user.tenantId should be ‘TENANT_PROJECT_ID’.
+   window.location ='/imageUpload';
+         console.log(result);
+}).catch(function(error) {
+  // Handle error.
+   window.alert("Error in login! Please try again!");
+}); }
+}
+</script>
+</html>
